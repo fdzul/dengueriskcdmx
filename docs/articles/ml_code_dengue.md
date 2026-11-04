@@ -1,4 +1,4 @@
-# Species Distribution Model of Confirmed Imported Dengue Cases in the Metropolitan Area of Mexico City using Machine Learning (2023-2024)
+# Ecological Niche Model of Confirmed Imported Dengue Cases in the Metropolitan Area of Mexico City using Machine Learning (2023-2024)
 
 ## 1 Objective
 
