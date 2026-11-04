@@ -1,0 +1,76 @@
+Package: dengueriskcdmx
+Type: Package
+Title: Data, Rasters and Code for the Dengue Transmission Risk Map of the Mexico City Metropolitan Area
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Felipe Antonio",
+           family = "Dzul Manzanilla",
+           role = c("aut", "cre"),
+           email = "felipe.dzul.m@gmail.com",
+           comment = c(ORCID = "orcid.org/0000-0002-2085-9141")),
+    person(given = "Fabian",
+           family = "Correa-Morales",
+           role = c("ctb"),
+           email = "fabiancorrea@msn.com",
+           comment = c(ORCID = "orcid.org/0000-0002-6193-1242")),
+    person(given = "Heron",
+           family = "Huerta",
+           role = c("ctb"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-7935-9758")),
+    person(given = "María D.",
+           family = "Mejía-Guevara",
+           role = c("ctb")))
+Description: Data, rasters and code supporting the dengue transmission risk map of the Mexico City
+    Metropolitan Area. Includes the Aedes aegypti ovitrap presence and
+    pseudo-absence data with nine environmental and socio-demographic predictors
+    (2017-2024, with training and test partitions), the external validation
+    data (2025), the study area, and the Quarto code of the machine-learning workflow (in the vignettes). Also provides, in 'inst/extdata', the
+    rasters (about 500 m) of the probability of Aedes aegypti occurrence, the
+    probability of confirmed imported dengue cases, and the five-level
+    epidemiological risk map, all derived from the consensus (mean of the
+    probabilities) of Random Forest, LightGBM and XGBoost models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0), sf
+Suggests: 
+    terra,
+    quarto,
+    bonsai,
+    correlation,
+    corrplot,
+    dials,
+    discrim,
+    doParallel,
+    dplyr,
+    ggplot2,
+    ggraph,
+    gt,
+    gtExtras,
+    kknn,
+    magrittr,
+    mapgl,
+    nnet,
+    parsnip,
+    purrr,
+    recipes,
+    rsample,
+    scales,
+    see,
+    sessioninfo,
+    skimr,
+    spatialsample,
+    themis,
+    tibble,
+    tictoc,
+    tidymodels,
+    tidyr,
+    tidysdm,
+    tidyverse,
+    tune,
+    workflows,
+    workflowsets,
+    yardstick
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.0
+VignetteBuilder: quarto
