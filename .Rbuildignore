@@ -4,3 +4,4 @@
 ^check_salida\.txt$
 ^docs$
 ^_pkgdown\.yml$
+^vignettes/\.quarto$

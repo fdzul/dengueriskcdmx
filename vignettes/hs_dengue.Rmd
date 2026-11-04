@@ -1,0 +1,78 @@
+---
+title: "Habitat Suitability of Dengue"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Habitat Suitability of Dengue}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(dengueriskcdmx)
+```
+
+
+## Step 1. load the pkgs
+
+```{r load_pkg, message=FALSE, warning=FALSE}
+library(terra)
+library(tidyterra)
+library(mapgl)
+```
+
+## Step 2. load the dengue prediction layer 
+
+```{r load_layer, message=FALSE, warning=FALSE}
+pred <- dengueriskcdmx::ae_raster(layer = "dengue")
+```
+
+## Step 3. load the area of interest layers 
+
+```{r load_aoi, message=FALSE, warning=FALSE}
+aoi <- dengueriskcdmx::aoi
+cdmx <- rgeomex::AGEM_inegi19_mx |>
+    dplyr::filter(CVE_ENT == "09") |>
+    dplyr::select(-NOMGEO)
+```
+
+
+## Step 4. map the dengue prediction 
+
+```{r map_dengue, message=FALSE, warning=FALSE}
+mapgl::maplibre_view(pred, 
+                     palette = viridis::turbo) |>
+    mapgl::add_continuous_legend(legend_title = "Probability",
+                                 position = "bottom-left",
+                                 draggable = TRUE,
+                                 values = c(0, 0.25, 0.50, 0.75, 1),
+                                 colors = viridis::turbo(n = 10)) |>
+    mapgl::add_source("aoi", aoi) |>
+    mapgl::add_layer(id = "aoi_outline",
+                     source = "aoi",
+                     type = "line",
+                     paint = list("line-color" = "blue",
+                                  "line-width" = 1,
+                                  "line-opacity" = 0.8)) |>
+    mapgl::add_source("cdmx", cdmx) |>
+    mapgl::add_layer(id = "cdmx_outline",
+                     source = "cdmx",
+                     type = "line",
+                     paint = list("line-color" = "white",
+                                  "line-width" = 0.5,
+                                  "line-opacity" = 0.8)) |>
+    mapgl::add_fullscreen_control(position = "top-left") |> 
+    mapgl::add_navigation_control() |>
+    mapgl::add_globe_control() |>
+    mapgl::add_scale_control()
+```
+
+
+
+

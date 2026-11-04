@@ -14,9 +14,6 @@ Setting env vars:
 * creating vignettes ... OK
 * checking for LF line-endings in source and make files and shell scripts
 * checking for empty or unneeded directories
-Removed empty directory ‘dengueriskcdmx/docs/articles’
-Removed empty directory ‘dengueriskcdmx/docs/news’
-Removed empty directory ‘dengueriskcdmx/docs/tutorials’
 * building ‘dengueriskcdmx_0.1.0.tar.gz’
 
 ══ Checking ════════════════════════════════════════════════════════════════════
@@ -27,7 +24,7 @@ Setting env vars:
 • _R_CHECK_PACKAGES_USED_IGNORE_UNUSED_IMPORTS_: FALSE
 • NOT_CRAN                                     : true
 ── R CMD check ─────────────────────────────────────────────────────────────────
-* using log directory ‘/private/var/folders/jn/bfwcn2ls0sdclpxn9r_gkbz00000gn/T/RtmphdNTpK/file423ab871601/dengueriskcdmx.Rcheck’
+* using log directory ‘/private/var/folders/jn/bfwcn2ls0sdclpxn9r_gkbz00000gn/T/RtmpPkMGO5/file5d40238d2ec0/dengueriskcdmx.Rcheck’
 * using R version 4.6.0 (2026-04-24)
 * using platform: aarch64-apple-darwin23
 * R was compiled by
@@ -35,7 +32,7 @@ Setting env vars:
     GNU Fortran (GCC) 14.2.0
 * running under: macOS 27.3
 * using session charset: UTF-8
-* current time: 2026-11-04 17:19:20 UTC
+* current time: 2026-11-04 18:35:02 UTC
 * using options ‘--no-manual --as-cran’
 * checking for file ‘dengueriskcdmx/DESCRIPTION’ ... OK
 * checking extension type ... Package
@@ -49,16 +46,19 @@ Setting env vars:
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
 * checking for sufficient/correct file permissions ... OK
-* checking whether package ‘dengueriskcdmx’ can be installed ... OK
-* checking installed package size ... OK
+* checking whether package ‘dengueriskcdmx’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: package ‘sf’ was built under R version 4.6.1
+See ‘/private/var/folders/jn/bfwcn2ls0sdclpxn9r_gkbz00000gn/T/RtmpPkMGO5/file5d40238d2ec0/dengueriskcdmx.Rcheck/00install.out’ for details.
+* checking installed package size ... INFO
+  installed size is 19.0Mb
+  sub-directories of 1Mb or more:
+    doc  17.9Mb
 * checking package directory ... OK
 * checking for future file timestamps ... OK
 * checking ‘build’ directory ... OK
-* checking DESCRIPTION meta-information ... WARNING
-Invalid license file pointers: LICENSE
-* checking top-level files ... NOTE
-Non-standard files/directories found at top level:
-  ‘check_salida.txt’ ‘docs’
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -69,10 +69,7 @@ Non-standard files/directories found at top level:
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
-* checking loading without being on the library search path ... OK
-* checking dependencies in R code ... NOTE
-Namespace in Imports field not imported from: ‘sf’
-  All declared Imports should be used.
+* checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
@@ -93,51 +90,23 @@ Namespace in Imports field not imported from: ‘sf’
 * checking installed files from ‘inst/doc’ ... OK
 * checking files in ‘vignettes’ ... OK
 * checking examples ... OK
-* checking for unstated dependencies in vignettes ... NOTE
-'::' or ':::' imports not declared from:
-  ‘correlation’ ‘dials’ ‘doParallel’ ‘dplyr’ ‘ggplot2’ ‘ggraph’ ‘gt’
-  ‘gtExtras’ ‘parsnip’ ‘purrr’ ‘recipes’ ‘rsample’ ‘scales’
-  ‘sessioninfo’ ‘skimr’ ‘spatialsample’ ‘themis’ ‘tibble’ ‘tictoc’
-  ‘tidyr’ ‘tidysdm’ ‘tune’ ‘workflows’ ‘workflowsets’ ‘yardstick’
-'library' or 'require' calls not declared from:
-  ‘bonsai’ ‘corrplot’ ‘discrim’ ‘doParallel’ ‘ggplot2’ ‘ggraph’ ‘kknn’
-  ‘magrittr’ ‘mapgl’ ‘nnet’ ‘see’ ‘skimr’ ‘themis’ ‘tidymodels’
-  ‘tidysdm’ ‘tidyverse’ ‘yardstick’
+* checking for unstated dependencies in vignettes ... OK
 * checking package vignettes ... OK
-* checking re-building of vignette outputs ... [11s/10s] OK
+* checking re-building of vignette outputs ... [24s/23s] OK
 * checking for non-standard things in the check directory ... OK
 * checking for detritus in the temp directory ... OK
 * DONE
 
-Status: 1 WARNING, 3 NOTEs
+Status: 1 WARNING
 See
-  ‘/private/var/folders/jn/bfwcn2ls0sdclpxn9r_gkbz00000gn/T/RtmphdNTpK/file423ab871601/dengueriskcdmx.Rcheck/00check.log’
+  ‘/private/var/folders/jn/bfwcn2ls0sdclpxn9r_gkbz00000gn/T/RtmpPkMGO5/file5d40238d2ec0/dengueriskcdmx.Rcheck/00check.log’
 for details.
 ── R CMD check results ─────────────────────────────── dengueriskcdmx 0.1.0 ────
-Duration: 1m 20.6s
+Duration: 55.9s
 
-❯ checking DESCRIPTION meta-information ... WARNING
-  Invalid license file pointers: LICENSE
+❯ checking whether package ‘dengueriskcdmx’ can be installed ... WARNING
+  See below...
 
-❯ checking top-level files ... NOTE
-  Non-standard files/directories found at top level:
-    ‘check_salida.txt’ ‘docs’
-
-❯ checking dependencies in R code ... NOTE
-  Namespace in Imports field not imported from: ‘sf’
-    All declared Imports should be used.
-
-❯ checking for unstated dependencies in vignettes ... NOTE
-  '::' or ':::' imports not declared from:
-    ‘correlation’ ‘dials’ ‘doParallel’ ‘dplyr’ ‘ggplot2’ ‘ggraph’ ‘gt’
-    ‘gtExtras’ ‘parsnip’ ‘purrr’ ‘recipes’ ‘rsample’ ‘scales’
-    ‘sessioninfo’ ‘skimr’ ‘spatialsample’ ‘themis’ ‘tibble’ ‘tictoc’
-    ‘tidyr’ ‘tidysdm’ ‘tune’ ‘workflows’ ‘workflowsets’ ‘yardstick’
-  'library' or 'require' calls not declared from:
-    ‘bonsai’ ‘corrplot’ ‘discrim’ ‘doParallel’ ‘ggplot2’ ‘ggraph’ ‘kknn’
-    ‘magrittr’ ‘mapgl’ ‘nnet’ ‘see’ ‘skimr’ ‘themis’ ‘tidymodels’
-    ‘tidysdm’ ‘tidyverse’ ‘yardstick’
-
-0 errors ✔ | 1 warning ✖ | 3 notes ✖
+0 errors ✔ | 1 warning ✖ | 0 notes ✔
 Error: R CMD check found WARNINGs
 Execution halted
