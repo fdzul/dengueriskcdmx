@@ -24,5 +24,5 @@ Character path to the GeoTIFF in `inst/extdata`.
 
 ``` r
 ae_raster_path("risk")
-#> [1] "/private/var/folders/jn/bfwcn2ls0sdclpxn9r_gkbz00000gn/T/RtmpQT93Gr/temp_libpath4fa8326828d0/dengueriskcdmx/extdata/epidemiological_risk.tif"
+#> [1] "/private/var/folders/jn/bfwcn2ls0sdclpxn9r_gkbz00000gn/T/RtmpSfaQWI/temp_libpath615e5d4228b3/dengueriskcdmx/extdata/epidemiological_risk.tif"
 ```

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "dengueriskcdmx: Data, Rasters and Code for the Dengue Transmission Risk Map of the Mexico City Metropolitan Area"
+type: software
+version: 0.1.0
+date-released: "2026-11-05"
+authors:
+  - family-names: "Dzul Manzanilla"
+    given-names: "Felipe Antonio"
+    orcid: "https://orcid.org/0000-0002-2085-9141"
+    affiliation: "Centro de Investigación en Sistemas de Salud, Instituto Nacional de Salud Pública, Cuernavaca, Morelos, México"
+  - family-names: "Correa-Morales"
+    given-names: "Fabian"
+    orcid: "https://orcid.org/0000-0002-6193-1242"
+    affiliation: "Centro Nacional de Programas Preventivos y Control de Enfermedades, Ciudad de México, México"
+  - family-names: "Huerta"
+    given-names: "Heron"
+    orcid: "https://orcid.org/0000-0002-7935-9758"
+    affiliation: "Instituto de Diagnóstico y Referencia Epidemiológicos Dr. Manuel Martínez Báez, Ciudad de México, México"
+  - family-names: "Mejía-Guevara"
+    given-names: "María D."
+    affiliation: "Servicios de Salud Pública de la Ciudad de México, Ciudad de México, México"
+  - family-names: "Gómez-Dantés"
+    given-names: "Héctor"
+    orcid: "https://orcid.org/0000-0002-2025-3641"
+    affiliation: "Centro de Investigación en Sistemas de Salud, Instituto Nacional de Salud Pública, Cuernavaca, Morelos, México"
+repository-code: "https://github.com/fdzul/dengueriskcdmx"
+license: MIT
+keywords:
+  - dengue
+  - Aedes aegypti
+  - risk map
+  - species distribution modelling
+  - machine learning
+  - Mexico City
+abstract: "R package with the Aedes aegypti ovitrap data (2017–2024, with training and test partitions), the external validation data (2025), the study area, the Quarto code of the machine-learning workflow (vignettes) and the rasters (about 500 m) of the probability of Aedes aegypti occurrence, the probability of confirmed imported dengue cases and the five-level epidemiological risk map for the Mexico City Metropolitan Area. Confirmed dengue case data are not distributed."

@@ -1,0 +1,48 @@
+{
+  "title": "dengueriskcdmx: Data, Rasters and Code for the Dengue Transmission Risk Map of the Mexico City Metropolitan Area",
+  "upload_type": "software",
+  "description": "<p>R package with the Aedes aegypti ovitrap data (2017–2024, with training and test partitions), the external validation data (2025), the study area, the Quarto code of the machine-learning workflow (vignettes) and the rasters (about 500 m) of the probability of Aedes aegypti occurrence, the probability of confirmed imported dengue cases and the five-level epidemiological risk map for the Mexico City Metropolitan Area. Confirmed dengue case data are not distributed.</p>",
+  "creators": [
+    {
+      "name": "Dzul Manzanilla, Felipe Antonio",
+      "affiliation": "Centro de Investigación en Sistemas de Salud, Instituto Nacional de Salud Pública, Cuernavaca, Morelos, México",
+      "orcid": "0000-0002-2085-9141"
+    },
+    {
+      "name": "Correa-Morales, Fabian",
+      "affiliation": "Centro Nacional de Programas Preventivos y Control de Enfermedades, Ciudad de México, México",
+      "orcid": "0000-0002-6193-1242"
+    },
+    {
+      "name": "Huerta, Heron",
+      "affiliation": "Instituto de Diagnóstico y Referencia Epidemiológicos Dr. Manuel Martínez Báez, Ciudad de México, México",
+      "orcid": "0000-0002-7935-9758"
+    },
+    {
+      "name": "Mejía-Guevara, María D.",
+      "affiliation": "Servicios de Salud Pública de la Ciudad de México, Ciudad de México, México"
+    },
+    {
+      "name": "Gómez-Dantés, Héctor",
+      "affiliation": "Centro de Investigación en Sistemas de Salud, Instituto Nacional de Salud Pública, Cuernavaca, Morelos, México",
+      "orcid": "0000-0002-2025-3641"
+    }
+  ],
+  "license": "mit",
+  "keywords": [
+    "dengue",
+    "Aedes aegypti",
+    "risk map",
+    "species distribution modelling",
+    "machine learning",
+    "Mexico City"
+  ],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/fdzul/dengueriskcdmx-py",
+      "relation": "isCompatibleWith",
+      "scheme": "url"
+    }
+  ]
+}
