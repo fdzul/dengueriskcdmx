@@ -24,6 +24,9 @@ authors:
     given-names: "Héctor"
     orcid: "https://orcid.org/0000-0002-2025-3641"
     affiliation: "Centro de Investigación en Sistemas de Salud, Instituto Nacional de Salud Pública, Cuernavaca, Morelos, México"
+  - family-names: "Dávalos Becerril"
+    given-names: "Eduardo"
+    orcid: "https://orcid.org/0009-0005-6540-8626"
 repository-code: "https://github.com/fdzul/dengueriskcdmx"
 license: MIT
 keywords:

@@ -23,7 +23,11 @@ Authors@R: c(
     person(given = "Héctor",
            family = "Gómez-Dantés",
            role = c("ctb"),
-           comment = c(ORCID = "0000-0002-2025-3641")))
+           comment = c(ORCID = "0000-0002-2025-3641")),
+    person(given = "Eduardo",
+           family = "Dávalos Becerril",
+           role = c("ctb"),
+           comment = c(ORCID = "0009-0005-6540-8626")))
 Description: Data, rasters and code supporting the dengue transmission risk map of the Mexico City
     Metropolitan Area. Includes the Aedes aegypti ovitrap presence and
     pseudo-absence data with nine environmental and socio-demographic predictors
