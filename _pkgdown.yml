@@ -1,3 +1,27 @@
 url: https://fdzul.github.io/dengueriskcdmx/
 template:
   bootstrap: 5
+  light-switch: true
+navbar:
+  structure:
+    left: [intro, reference, articles]
+    right: [search, github, python, rproject, lightswitch]
+  components:
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/fdzul/dengueriskcdmx
+      aria-label: GitHub
+    python:
+      icon: fab fa-python fa-lg
+      href: https://github.com/fdzul/dengueriskcdmx-py
+      aria-label: Python version
+    rproject:
+      icon: fab fa-r-project fa-lg
+      href: https://fdzul.r-universe.dev/dengueriskcdmx
+      aria-label: R-universe
+home:
+  links:
+  - text: Python version
+    href: https://github.com/fdzul/dengueriskcdmx-py
+  - text: R-universe
+    href: https://fdzul.r-universe.dev/dengueriskcdmx

@@ -1,4 +1,12 @@
-# dengueriskcdmx
+# dengueriskcdmx <img src="man/figures/logo.png" align="right" height="260" alt="dengueriskcdmx hexagon logo" />
+
+<!-- badges: start -->
+[![R-universe](https://fdzul.r-universe.dev/badges/dengueriskcdmx)](https://fdzul.r-universe.dev/dengueriskcdmx)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Python version](https://img.shields.io/badge/Python%20version-dengueriskcdmx--py-3776AB?logo=python&logoColor=white)](https://github.com/fdzul/dengueriskcdmx-py)
+[![Docs](https://img.shields.io/badge/docs-pkgdown-1f4e79)](https://fdzul.github.io/dengueriskcdmx/)
+<!-- badges: end -->
 
 Data, rasters and code for supporting the **Risk Map of Dengue Transmission in the Metropolitan Area of Mexico City**.
 
