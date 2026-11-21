@@ -9,6 +9,9 @@ vignette: >
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
+  # the maps need rgeomex, mapgl and tidyterra; without them the code is shown, not run
+  eval = all(vapply(c("rgeomex", "mapgl", "tidyterra"), requireNamespace,
+                    logical(1), quietly = TRUE)),
   collapse = TRUE,
   comment = "#>"
 )
